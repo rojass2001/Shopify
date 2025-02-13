@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Link } from 'react-router-dom'
 const mobilenav=[{name:"Home",link:"/"},
     {name:"About",link:"/about"},

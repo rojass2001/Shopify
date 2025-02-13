@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { FaBars, FaCartShopping } from "react-icons/fa6";
-import { CiLogin } from "react-icons/ci";
 import { Link } from 'react-router-dom';
 import Searchbar from './Searchbar';
-import Mobilenav from './Mobilenav';
 import Loginicon from './Loginicon';
 import Mobilenavbar from './Mobilenavbar';
 import { useSelector } from 'react-redux';
+import Mobilesearchbar from './Mobilesearchbar';
 function DesktopNav() {
   const{cartproducts}=useSelector(state=>state.cart)
   const [open,setopen]=useState(false)
@@ -38,10 +37,11 @@ function DesktopNav() {
   </div>
   
     </div>
-    <Mobilenav/>
+    <Mobilesearchbar/>
     {open&&
       <Mobilenavbar navbarpopup={navbarpopup}/>
    }
+
     </div>
   
   )

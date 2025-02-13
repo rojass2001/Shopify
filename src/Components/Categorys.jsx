@@ -1,4 +1,3 @@
-import React from 'react'
 import { categoryarray } from './Categoryarray'
 import { productwithcategory } from './Api'
 import { useDispatch } from 'react-redux'

@@ -1,6 +1,4 @@
-import React from 'react'
 import { BrowserRouter as Router,Route,Routes  } from 'react-router-dom'
-import Hero from './Hero'
 import DesktopNav from './Navbar/DesktopNav'
 import Home from './Pages/Home'
 import Cart from './Pages/Cart'
