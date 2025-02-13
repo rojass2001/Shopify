@@ -21,7 +21,7 @@ function Products() {
    
   return (
     <>
-    <div className='w-full mt-[120px] md:mt-[70px] '>
+    <div className='w-full mt-[130px] md:mt-[70px] '>
       <Categorys/>
       <div className='bg-blue-700 text-center text-white py-2 font-bold text-2xl'>Our Products</div>
        

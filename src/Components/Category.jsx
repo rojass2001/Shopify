@@ -4,7 +4,7 @@ function Category() {
   return (
     <div className='w-full '>
    <p className=' text-blue-500 ml-5 font-bold text-2xl'>Shop By Category</p>
-    <div className='w-full py-2 grid gap-3 grid-cols-3 md:grid-cols-5'>
+    <div className='w-full justify-center py-2 grid gap-3 grid-cols-2 md:grid-cols-4'>
        
         {categoryarray.map((a)=>(
     <div className='h-[150px] bg-gray-400  text-center place-items-center

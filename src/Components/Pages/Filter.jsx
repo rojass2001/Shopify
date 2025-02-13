@@ -12,11 +12,11 @@ function Filter() {
 const {filterproducts}=useSelector(state=>state.product)
   return (
     
-    <div className='w-full mt-[120px] md:mt-[70px] '>
+    <div className='w-full mt-[130px] md:mt-[70px]  '>
     <Categorys/>
     
-    <div className='w-full mt-5 min-h-[900px] overflow-y-auto px-2 md:px-10 gap-y-8 gap-x-2 
-     md:gap-x-12 grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
+    <div className='w-full mt-5 px-2 md:px-10 gap-y-8 gap-x-2 
+      grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
         {filterproducts?.map((a)=>(
           <Link to="/details">
     <div onClick={()=>dispatch(setproductdetail(a))} className='h-[300px] relative 

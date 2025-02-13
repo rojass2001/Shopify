@@ -31,7 +31,7 @@ function Topproducts() {
     <p>{a.title.slice(0,24)}</p>
     <p>${Math.floor(a.price)}</p>
     <p className='flex items-center'><FaStar/>{a.rating.rate}</p>
-    <div onClick={()=>dispatch(addtocart(a))} className='p-2 rounded-full absolute bottom-2 right-2 text-xl bg-white shadow-md
+    <div onClick={()=>dispatch(addtocart(a))} className='p-2 rounded-full absolute bottom-2 right-1 text-xl bg-white shadow-md
      shadow-gray-300'><FaCartShopping  /></div>
    <Link to="/details">  <button className='bg-black text-white p-2 rounded-full '>
     More Details</button></Link>

@@ -13,18 +13,15 @@ function Categorys() {
        navigate('/filter')
     }
   return (
-    <div className='w-full py-1 justify-start md:justify-center flex overflow-x-auto gap-[40px]'>
+    <div className='w-full   md:justify-center  overflow-x-auto flex gap-[70px]' >
+ 
       {categoryarray.map((a)=>(
-        <div className='' key={a.name}>
-         <div onClick={()=>productcategorys(a.value)} className=' shadow-md shadow-gray-300 rounded-full 
-         place-content-center bg-white text-center font-bold h-[95px] w-[95px] md:w-[120px] md:h-[120px] place-items-center   '>    
-        <div  className=' h-[40px] w-[40px] md:h-[50px] md:w-[50px] rounded-full'> 
-            <img className='w-full h-full rounded-full' src={a.image}/>
-            </div>
-            <p className='text-blue-600  text-sm'>{a.name}</p>
-           
-         </div>
-       </div>
+        <div className=' text-center  text-blue-600 font-bold' key={a.name} >
+        <div  onClick={()=>productcategorys(a.value)}className='bg-white shadow-md shadow-gray-300 w-[90px] h-[90px] rounded-full p-2   ' >
+        <img  className='w-full h-full rounded-full' src={a.image}/>
+        </div>
+        <p >{a.name}</p>
+        </div>
       ))
        
       }

@@ -18,7 +18,7 @@ const Pro=useSelector(state=>state.product.productdetails)
       <p className='text-2xl'>Price:${Math.floor(Pro.price)}</p>
       <p>{Pro.description}</p>
      <p className='flex items-center gap-1'> <FaStar/>{Pro.rating.rate}</p>
-     <div className='flex text-black gap-2  '>
+     <div className='w-full items-center flex text-black gap-2  '>
       <button onClick={()=>dispatch(decreaseproductquantity())} className='bg-black w-10 h-7 text-white'>-</button>{Pro.quantity}
       <button  onClick={()=>dispatch(increaseproductquantity())} className='bg-black w-10 h-7 text-white'>+</button>
      </div>
