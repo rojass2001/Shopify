@@ -16,7 +16,7 @@ const {filterproducts}=useSelector(state=>state.product)
     <Categorys/>
     
     <div className='w-full mt-5 px-2 md:px-10 gap-y-8 gap-x-2 
-      grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
+      grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
         {filterproducts?.map((a)=>(
           <Link to="/details">
     <div onClick={()=>dispatch(setproductdetail(a))} className='h-[300px] relative 

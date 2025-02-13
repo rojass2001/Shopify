@@ -26,7 +26,7 @@ function Products() {
       <div className='bg-blue-700 text-center text-white py-2 font-bold text-2xl'>Our Products</div>
        
     <div className='w-full mt-5 min-h-[900px] overflow-y-auto px-2 md:px-10 gap-y-8 gap-x-2 
-     md:gap-x-12 grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
+     md:gap-x-12 grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
         {allproduct?.map((a)=>(
           <Link to="/details">
     <div onClick={()=>dispatch(setproductdetail(a))} className='h-[300px] relative 

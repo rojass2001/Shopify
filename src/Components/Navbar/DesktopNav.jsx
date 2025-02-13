@@ -33,7 +33,7 @@ function DesktopNav() {
     bg-blue-600 top-[1px] right-1'>{cartproducts.length}</div>
 }
    </div></Link>
-   <FaBars onClick={navbarpopup} className='md:hidden text-2xl'/>
+   <FaBars onClick={navbarpopup} className='md:hidden text-3xl'/>
   </div>
   
     </div>
