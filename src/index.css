@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body{
+  margin:0;
+}
+.nav{
+  background-color: blue;
+}
+.primary{
+  color:blue;
+}
