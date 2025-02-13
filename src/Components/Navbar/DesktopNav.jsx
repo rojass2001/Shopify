@@ -18,7 +18,7 @@ function DesktopNav() {
    <p className='text-3xl font-bold'>Shopify</p>
     <div className='gap-5 text-[16px] hidden md:flex font-bold'>
   <Link to="/"> <p>Home</p></Link> 
-     <p>About</p> 
+   <Link to="/about">  <p>About</p></Link> 
      <Link to="/products"><p>Products</p></Link>
      <Link to="/contact"><p>Contact</p> </Link>
     </div>

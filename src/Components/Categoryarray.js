@@ -6,7 +6,7 @@ export const categoryarray=[
         
     },
     {
-    image:"http://3.bp.blogspot.com/-PU2a4BZDJ-4/UFoVC3LBZAI/AAAAAAAAA38/ZRPMP_r7D2Y/s1600/Gold+Diamond+Jewellery.jpg",
+    image:"https://i.pinimg.com/originals/70/ad/d5/70add5912c3cdb2a4a7179598768ad4f.jpg",
     name:"jewellery",
     value:"jewelery",
    

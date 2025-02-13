@@ -9,6 +9,7 @@ import Filter from './Pages/Filter'
 import Login from './Pages/Loginorregister/Login'
 import Register from './Pages/Loginorregister/Register'
 import Contact from './Pages/Contact'
+import About from './Pages/About'
 
 function Routings() {
   return (
@@ -25,7 +26,7 @@ function Routings() {
         <Route path="/login" element={<Login/>} />
         <Route path="/register" element={<Register/>} />
         <Route path="/contact" element={<Contact/>} />
-
+        <Route path="/about" element={<About/>} />
         </Routes>
         <Footer/>
       </Router>

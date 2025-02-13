@@ -14,9 +14,11 @@ const {filterproducts}=useSelector(state=>state.product)
     
     <div className='w-full mt-[130px] md:mt-[70px]  '>
     <Categorys/>
-    
-    <div className='w-full mt-5 px-2 md:px-10 gap-y-8 gap-x-2 
-      grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
+    {filterproducts.length<1?
+    <div className='w-full mt-4 h-screen font-bold text-3xl text-center text-blue-600'>No Search Found</div>
+    :
+    <div className='w-full mt-5 px-6 md:px-10 gap-y-8 gap-x-2 
+      grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 '>
         {filterproducts?.map((a)=>(
           <Link to="/details">
     <div onClick={()=>dispatch(setproductdetail(a))} className='h-[300px] relative 
@@ -36,7 +38,7 @@ const {filterproducts}=useSelector(state=>state.product)
     </Link>
 ))}
     </div>
-    
+}
     </div>
   )
 }
