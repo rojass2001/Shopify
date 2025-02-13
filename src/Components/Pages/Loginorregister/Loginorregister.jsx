@@ -5,9 +5,9 @@ function Loginorregister({buttonname,des,link}) {
     <div className='w-full p-2 pt-[160px] min-h-screen bg-gray-100 place-content-center place-items-center'>
       <div className='w-full   md:w-[50%] lg:w-[23%] place-content-center py-2 px-2 font-bold  bg-white 
       min-h-[250px] space-y-3 border-[6px] border-blue-700 text-blue-700 rounded-lg sm:w-full md:min-h-[350px]'>
-       <label for="uname">Enter Name</label>
+       <label >Enter Name</label>
        <input className="border-2 h-12 w-full border-black" name="uname" placeholder='enter username'/>
-       <label for="pass">Enter Password</label>
+       <label >Enter Password</label>
        <input name="pass" type="password"className='border-2 h-12 w-full  border-black'  
        placeholder='enter password'/>
        <p className=''>forget password?</p>
