@@ -6,7 +6,7 @@ function Category() {
     <div className='w-full justify-center py-2 grid gap-3 grid-cols-2 md:grid-cols-4'>
        
         {categoryarray.map((a)=>(
-    <div className='h-[150px] bg-gray-400  text-center justify-center place-items-center
+    <div className='h-[150px] bg-gray-400 pt-2 text-center justify-center place-items-center
     place-content-center  text-blue-600' key={a.name}>
     <img className='w-16 h-16 rounded-full mx-auto' src={a.image}/>
     <p className=' font-bold '>{a.name}</p>

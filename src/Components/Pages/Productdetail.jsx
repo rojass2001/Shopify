@@ -23,7 +23,7 @@ const Pro=useSelector(state=>state.product.productdetails)
       <button  onClick={()=>dispatch(increaseproductquantity())} className='bg-black w-10 h-7 text-white'>+</button>
      </div>
      <p className='text-xl'>subtotal:${Pro.subtotal}</p>
-     <div className='flex gap-3 mt-5 text-white'>
+     <div className='w-full justify-center md:justify-start flex gap-3 mt-5 text-white'>
       <button className='bg-black w-[100px] h-9'>BuyNow</button>
       <button onClick={()=>dispatch(addtocart(Pro))} className='bg-black w-[100px] h-9'>Addtocart</button>
      </div>
