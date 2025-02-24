@@ -4,9 +4,9 @@ import { Link } from "react-router-dom"
 
 function Loginorregister({des,buttonname,link}) {
     return (
-      <div className=' w-full min-h-screen pb-5 px-2 pt-[130px] place-content-center place-items-center '>
-      <form className='w-full md:w-[50%] lg:w-[23%] bg-white space-y-4 border-[5px] border-blue-700
-      place-content-center rounded-lg text-blue-600 min-h-[350px] lg:min-h-[320px]   px-3 py-9 lg:py-5'>
+      <div className=' w-full min-h-screen pb-5 px-2 pt-[120px] place-content-center place-items-center '>
+      <form className='w-full md:w-[50%] lg:w-[23%] bg-white space-y-3 lg:space-y-3 border-[5px] border-blue-700
+      place-content-center rounded-lg text-blue-600 min-h-[350px]  px-3 py-9  lg:min-h-[320px]  lg:py-4'>
       <label className='font-bold '>Enter Email</label>
      <div className="w-full flex  items-center h-14 pr-1 place-content-center border-2 border-blue-700">
       <IoIosContact className="mt-1 text-blue-700"size={29}/>
