@@ -1,22 +1,30 @@
-import { Link } from 'react-router-dom'
-function Loginorregister({buttonname,des,link}) {
-    
-  return (
-    <div className='w-full p-2 pt-[160px] min-h-screen bg-gray-100 place-content-center place-items-center'>
-      <div className='w-full   md:w-[50%] lg:w-[23%] place-content-center py-2 px-2 font-bold  bg-white 
-      min-h-[250px] space-y-3 border-[6px] border-blue-700 text-blue-700 rounded-lg sm:w-full md:min-h-[350px]'>
-       <label >Enter Name</label>
-       <input className="border-2 h-12 w-full border-black" name="uname" placeholder='enter username'/>
-       <label >Enter Password</label>
-       <input name="pass" type="password"className='border-2 h-12 w-full  border-black'  
-       placeholder='enter password'/>
-       <p className=''>forget password?</p>
-       <Link to={link}><p className='text-sm text-center text-blue-700 mt-2'>{des}</p></Link>
-       <div className='w-full text-center text-white'>
-        <button  className='w-[110px] mt-3 bg-blue-700 h-9'>{buttonname}</button>
-        </div>
+import { FaLock } from "react-icons/fa"
+import { IoIosContact } from "react-icons/io"
+import { Link } from "react-router-dom"
+
+function Loginorregister({des,buttonname,link}) {
+    return (
+      <div className=' w-full min-h-screen pb-5 px-2 pt-[120px] place-content-center place-items-center '>
+      <form className='w-full md:w-[50%] lg:w-[23%] bg-white space-y-4 border-[5px] border-blue-700
+      place-content-center rounded-lg text-blue-600 min-h-[380px] lg:min-h-[320px]   px-3 py-12 lg:py-5'>
+      <label className='font-bold '>Enter Email</label>
+     <div className="w-full flex  items-center h-14 pr-1 place-content-center border-2 border-blue-700">
+      <IoIosContact className="mt-1 text-blue-700"size={29}/>
+       <input placeholder='enter your username @gmail.com'className='w-full  outline-none mt-1 h-12 lg:h-9'/></div>
+      <label className='font-bold '>Enter password</label>
+      <div className="w-full flex gap-1  items-center h-14 pr-1 place-content-center border-2  border-blue-700">
+      <FaLock className="mt-1  text-blue-700"size={20}/>
+      <input type="password"placeholder='enter your password'className='w-full  outline-none mt-1 h-12 lg:h-9'/>  
       </div>
-    </div>
-  )
-}
-export default Loginorregister
+      <p className="font-bold ">forget password?</p>
+    <Link to={link}> <p className='text-sm font-bold underline text-center mt-2'>{des}</p></Link>
+     <div className='w-full mt-2 text-center'> 
+      <button className=' px-8 py-2 font-bold mx-auto text-white bg-blue-700 '>{buttonname}</button>
+      </div>
+      </form>
+        
+      </div>
+    )
+  }
+  
+  export default Loginorregister

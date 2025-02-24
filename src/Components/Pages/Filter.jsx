@@ -17,7 +17,7 @@ const {filterproducts}=useSelector(state=>state.product)
     {filterproducts.length<1?
     <div className='w-full mt-4 h-screen font-bold text-3xl text-center text-blue-600'>No Search Found</div>
     :
-    <div className='w-full mt-5 px-6 md:px-10 gap-y-8 gap-x-2 
+    <div className='w-full  mt-5 px-6 md:px-10 gap-y-8 gap-x-2 
       grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 '>
         {filterproducts?.map((a)=>(
           <Link to="/details">
@@ -32,7 +32,7 @@ const {filterproducts}=useSelector(state=>state.product)
    <p>${Math.floor(a.price)}</p>
    
     <div onClick={()=>dispatch(addtocart(a))} className='p-2 rounded-full bg-white shadow-md absolute bottom-2 right-2
-     shadow-gray-300'> <FaCartShopping className='text-xl'/></div>
+     shadow-gray-300'> <FaCartShopping className='text-xl '/></div>
     </div>
    
     </Link>
