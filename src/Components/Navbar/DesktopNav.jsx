@@ -30,7 +30,7 @@ function DesktopNav() {
    <FaCartShopping className='text-blue-600 text-xl'/>
    {cartproducts.length>0&&
    <div className='w-4 h-4  absolute text-sm flex items-center place-content-center rounded-full
-    bg-blue-600 top-[1px] right-1'>{cartproducts.length}</div>
+    bg-blue-600 top-[1px] right-1 animate-bounce'>{cartproducts.length}</div>
 }
    </div></Link>
    <FaBars onClick={navbarpopup} className='md:hidden text-3xl'/>

@@ -16,7 +16,7 @@ function Loginorregister({des,buttonname,link}) {
       <FaLock className="mt-1  text-blue-700"size={20}/>
       <input type="password"placeholder='enter your password'className='w-full  outline-none mt-1 h-12 lg:h-9'/>  
       </div>
-      <p className="font-bold ">forget password?</p>
+      <p className="font-bold">forget password?</p>
     <Link to={link}> <p className='text-sm font-bold underline text-center mt-2'>{des}</p></Link>
      <div className='w-full mt-2 text-center'> 
       <button className=' px-8 py-2 font-bold mx-auto text-white bg-blue-700 '>{buttonname}</button>

@@ -1,5 +1,7 @@
+/* eslint-disable react/jsx-key */
 import React, { useEffect } from 'react'
-import axios from 'axios';
+import { PulseLoader } from 'react-spinners';
+
 import { FaStar, } from 'react-icons/fa'
 import { FaCartShopping } from "react-icons/fa6";
 import { useDispatch, useSelector } from 'react-redux';

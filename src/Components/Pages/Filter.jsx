@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 
 import Categorys from '../Categorys'
 import { useDispatch, useSelector } from 'react-redux'
